@@ -24,7 +24,31 @@ class _ChatBotScreenState extends State<ChatBotScreen> {
     setState(() {
       _messages.insert(0, message);
     });
+
+    //getResponse(message.text);
+    String response = await getResponse(message.text);
+    Message bot = Message(text: response, isMe: false);
+
+    setState(() {
+      _messages.insert(0, bot);
+    });
   }
+
+  Future<String> getResponse(String message) async {
+
+  String apiUrl = 'http://127.0.0.1:5000/api?input=$message';
+  final response = await http.get(Uri.parse(apiUrl));
+
+  if (response.statusCode == 200) {
+    final jsonResponse = json.decode(response.body);
+    return jsonResponse['response'];
+    
+  } 
+  else {
+    throw Exception('Failed to load response');
+  }
+
+}
 
   Widget _buildMessage(Message message) {
     return Container(

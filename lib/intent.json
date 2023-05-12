@@ -1,0 +1,93 @@
+{"intents": [
+
+    {"tag": "greetings",
+     "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up","Hey"],
+     "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+     "context_set": ""
+    },
+
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+     "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+     "context_set": ""
+    },
+
+    {"tag": "sunscreen",
+     "patterns": ["sunscreen", "why should i use sunscreen", "suggest sunscreen for my skin type", "sunscreen for oily skin?","sunscreen for acne prone skin", "spf"],
+     "responses": ["Sunscreens are used to protect the skin from the harmful effects of the sun.They help to prevent sunburn and premature aging (such as wrinkles, leathery skin).Sunscreens also help to decrease the risk of skin cancer.", "Apply sunscreen generously to all exposed skin 30 minutes before sun exposure,everyday.", "When choosing the best sunscreen for face, opt for a high SPF of 30 or higher which easily absorbs into the skin"," If you have oily, acne-prone skin, specifical sunscreen for oily skin is recommended as it will be water-based instead of oil-based thus a sunscreen gel is recommended for oily skin", "If your skin is sensitive and prone to irritation, avoid products with alcohol, preservatives, fragrances, and oxybenzone." , "If you have dry skin, Then you need a sunscreen that doubles as a moisturizer."],
+     "context_set": ""
+    },
+
+    {"tag": "name",
+     "patterns": ["what is your name", "what should I call you", "whats your name?", "who are you"],
+     "responses": ["You can call me Cera.", "I'm Cera!", "I'm Cera aka Your Skincare Assistant."],
+     "context_set": ""
+    },
+
+    {"tag": "skintype",
+     "patterns": ["what is my skin type", "skintype?", "tell my skin","determine my skintype"],
+     "responses": ["To determine skin type: 1.wash the face with a gentle cleanser.2.pat dry with a clean towel.3.observe how the skin looks and feels immediately after washing.4.take note of how this changes over the next few hours.Dry skin will feel dry or tight shortly after washing,It may also look dull, rough, or flaky.Oily skin may look matte after washing,but will become shiny or greasy over the next few hours,The oil will be visible if a person blots their nose with tissue.Combination skin typically involves an oily T-zone and normal or dry cheeks, the T-zone includes the forehead, nose, and chin.After some time, this area will look shiny or greasy, but the cheeks will not. Normal skin will look clear, even in tone and texture, and will not feel tight or irritated after washing, It will not change much during the course of the day.Sensitive skin may sting, burn, or itch after a wash."],
+     "context_set": ""
+    },
+    
+    {"tag": "exfoliate",
+     "patterns": ["why exfoliation", "how often should i exfoliate","how many times exfoliate?","why exfoliate?","exfoliate?"],
+     "responses": ["Your skin is constantly repairing and replacing itself. Because of this, you can be left with layers upon layers of dead skin all over your body. This is why you need exfoliation.", "You can use MAMAEARTH TEA TREE FACE SCRUB.", "Most experts advise that you exfoliate two to three times per week — as long as your skin can handle it."],
+     "context_set": ""
+    },
+    
+    {"tag": "routine",
+     "patterns": ["what should be my skin care routine", "night time routine", "day time routine", "routine?", "take care of my skin"],
+     "responses": ["1. Cleansing: Choose a cleanser that does not leave your skin tight after washing.Cleansers known to work well for all skin types include Cetaphil and Banila Clean It Zero Sherbet Cleanser.2.Serums: A serum with vitamin C or growth factors or peptides would be better in the morning, under sunscreen.At night, retinol or prescription retinoids work best.3.Moisturizer: Even oily skin needs moisturizer, but use one that is lightweight, gel-based, and non-comedogenic, or does not block your pores, like CeraVe facial lotion.Dry skin may benefit from more cream-based moisturizers like MISSHA Super Aqua Cell Renew Snail Cream.4.Sunscreen: Apply sunscreen with at least 30 SPF 15 minutes before heading outdoors, as it takes a while for sunscreen to activate."],
+     "context_set": ""
+    },
+
+    {"tag": "acne",
+     "patterns": ["get rid of acne", "acne scars", "pimples", "acne prone", "reduce acne", "why do i have acne", "reasons for acne", "causes of acne", "tips to reduce acne", "acne treatements"],
+     "responses": [" There are a variety of causes of acne including genetics, fluctuating hormone levels, stress, high humidity and using oily or greasy personal care products. ", "You can use over-the-counter (OTC) medicated creams, cleansers, and spot treatments to help address mild acne and pimples as they pop up.","If you continue to experience symptoms after using OTC acne treatments for several weeks, you may want to consider reaching out for professional treatment as you might have severe acne.", "try these at-home tips to help clear up acne and help prevent future breakouts: Apply tea tree oil. Apply aloe vera. Avoid touching your face.", "Alpha hydroxy acids (AHAs) are often found in products made to treat acne since they help to remove dead skin and prevent clogged pores. Even better, AHAs can also help make acne scars appear less noticeable.","For severe acne scars you can go for laser treatment, microneedling, light therapy, and various other procedures." ],
+     "context_set": ""
+    },
+
+    {"tag": "serum",
+     "patterns": ["why serums", "serum", "which serum", "benefits of serums", "uses of serums", "vitamin c","vitamin"],
+     "responses": ["If there's one step in our daily skin-care routine that we dare not skip, it's applying serum.The best face serums deliver a highly concentrated, potent dose of active ingredients to the skin and target a range of skin concerns in one go. ","When you apply vitamin C serum to the affected area, it works by promoting the synthesis of collagen.The brightening properties of vitamin C serum also extend to fading dark spots and lightening hyperpigmentation."],
+     "context_set": ""
+    },
+
+    {"tag": "retinol",
+     "patterns": ["side effects of retinol", "why retinol?", "should i use retinol", "retinol safe?" , "benefits of retinol"],
+     "responses": ["Retinol can do a lot for your skin: aging support, acne relief, and overall skin rejuvenation.", "Retinoids, including retinol, are not recommended if you are pregnant or nursing.", "If you want to try retinol, keep two main guidelines in mind: Start slow, and use a low strength.","People who use retinols commonly experience dry and irritated skin, especially after using a new product.To lessen these side effects, try using your retinol every other night or every third night, and work your way up to using it nightly."],
+     "context_set": ""
+    },
+
+    {"tag": "moisturizer",
+     "patterns": ["why moisturizer", "how can i moisture my skin", "moisturizer for oily skin","uses of moisturizer"],
+     "responses": ["a daily moisturizer is necessary to maintain your skin's moisture barrier and to prevent environmental damage to your skin.", "Using aloe vera on the face can help moisturize skin.Regularly applying a small amount of aloe vera to the face can help treat various skin conditions, including acne, eczema, and sunburn.", "Neutrogena Hydro Boost Water Gel for oily skin types — though it is been recommended by experts countless other times for dry skin types, the rosacea-prone, and even pregnant women, too.", "The Biotique Morning Nectar Flawless Skin moisturizer for All Skin Types is regarded as one of the best moisturizers for dry skin."],
+     "context_set": ""
+    },
+
+    {"tag": "dark circles",
+     "patterns": ["reduce dark circles", "get rid of dark circles", "dark circles"],
+     "responses": ["Oversleeping, extreme fatigue, or just staying up a few hours past your typical bedtime can cause dark circles to form under your eyes.", "There are many eye creams on the market.They may reduce the look of dark circles by hydrating and smoothing the skin around your eyes.", "You can use Mamaearth Bye Bye Dark Circles, Under Eye Cream for Dark Circles."],
+     "context_set": ""
+    },
+
+    {"tag": "pigmentation",
+    "patterns": ["what is pigmentaion", "Pigmentation", "reduce pigmentation"],
+    "responses": ["Pigmentation refers to the coloring of the skin.", "Apple cider vinegar contains acetic acid, which research Trusted Source shows may lighten pigmentation.", "Sun damage is the most common cause of skin pigmentation and usually affects the parts of the body that are most frequently exposed to the sun. "],
+    "context_set": ""
+   },
+
+   {"tag": "aging",
+     "patterns": ["prevent aging", "wrinkles", "anti aging", "fine lines"],
+     "responses": ["The sun plays a major role in prematurely aging our skin.You should apply sunscreen every day to all skin that is not covered by clothing.", "If you have fine lines, retinoids (which come from vitamin A) like retinol may make your skin smoother because they help your skin make more collagen."],
+     "context_set": ""
+    },
+
+    {"tag": "toner",
+      "patterns": ["toner?", "why toner", "uses of toner"],
+      "responses": ["Toners can remove dirt, bacteria and makeup as well as pollution and dust that a cleanser may otherwise leave behind.","Plum Green Tea Toner is an award-winning and Best Selling Product from Plum Goodness.The toner is loved by oily and combination skin types."],
+      "context_set": ""
+     }
+]
+}
